@@ -1,0 +1,8 @@
+3/23/26
+1) Proposal due Wednesday (we'll finish this today)
+2) Poster due April 4th (we will finish by the Friday before)
+-- Group overleaf created by Kaden and invite sent out
+-- Next meeting Wednesday at 12:00
+-- Is there an easy way to minimize standard deviation?
+-- How do we model a person's blood sugar, adding in random elements?
+(see example 17.2.3)
