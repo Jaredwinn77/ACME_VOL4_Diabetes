@@ -1,7 +1,6 @@
 # ACME_VOL4_Diabetes
 Repo for vol4 project
-
-
+For your convenience copy the layout of first model and then change the objective function and simulation data. 
 Resources:
 NIH paper detailing glucose model
 https://pmc.ncbi.nlm.nih.gov/articles/PMC9532137/
