@@ -6,3 +6,22 @@
 -- Is there an easy way to minimize standard deviation?
 -- How do we model a person's blood sugar, adding in random elements?
 (see example 17.2.3)
+
+
+3/25/26
+-- Poster template added
+-- Kaden can create a UI if we finish everything fast enough
+
+Tasks-- 
+1) Better objectives (Alex) (focusing on keeping the transitions smooth ie minimize derivtives of glucose)
+2) Time lag (kalman filter) (Kurt)
+3) Other hormone pumps (Kaden)
+4) Bergman minimal model (investigate for potential)(Jared but no due date)
+5) better model for glucose spikes (add meals, general trends, snacks, exercise)(simulate function) (Jared)
+6) Put everything on the poster
+
+
+Plan:
+finish individual sections by friday
+integrate model on wednesday
+finish poster by next friday
