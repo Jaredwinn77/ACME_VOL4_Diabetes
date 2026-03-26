@@ -5,4 +5,4 @@ Time log:
 3/25/26-- group meeting 1 hour (all)
 
 
-3/26/26-- Developed better model of daily glucose levels (Jared)
+3/26/26-- Developed better model of daily glucose levels 1.5 hours (Jared)
