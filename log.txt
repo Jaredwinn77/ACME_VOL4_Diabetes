@@ -1,0 +1,8 @@
+Time log:
+3/16/26-- first meeting 30 min (all)
+3/23/26-- Wrote proposal 1 hour (all)
+3/24/26-- Created first_model, cgm class and simulate function 3hrs (Jared)
+3/25/26-- group meeting 1 hour (all)
+
+
+3/26/26-- Developed better model of daily glucose levels 1.5 hours (Jared)
