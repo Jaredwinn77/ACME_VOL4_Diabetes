@@ -157,25 +157,27 @@ def simulate(spikes, t_steps, dt, starting, a, b, c, d, glucose_penalty, insulin
         if x[1] <= 0 and dxdt[1] < 0:
             dxdt[1] = 0
         return dxdt
+    
     current = starting
     t_hist = []
     y_hist = []
     readings = [starting.copy()]
+
     for t in range(0, t_steps, dt):
         current[0] += np.sum(spikes[t:t+dt])
 
         if cgm_noise:
-            cgm_noise = np.random.normal(0, 10, size=2) # adding noise to what the cgm measures
+            noise = np.random.normal(0, 10, size=2) # adding noise to what the cgm measures
         else:
-            cgm_noise = 0
+            noise = 0
 
         # Time delay of cgm
         if step_delay == 0:
-            delayed = current.copy() + cgm_noise
+            delayed = current.copy() + noise
         elif len(readings) > step_delay:
-            delayed = readings[-step_delay] + cgm_noise
+            delayed = readings[-step_delay] + noise
         else:
-            delayed = readings[0] + cgm_noise
+            delayed = readings[0] + noise
 
         u = cgm.control(delayed)
         sol = solve_ivp(fun=fun, t_span=(t, t+dt), y0=current, args=(u,))
@@ -183,5 +185,6 @@ def simulate(spikes, t_steps, dt, starting, a, b, c, d, glucose_penalty, insulin
         readings.append(current.copy())
         t_hist.append(sol.t)
         y_hist.append(sol.y)
+
     return np.concatenate(t_hist), np.concatenate(y_hist, axis=1)
 
