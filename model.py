@@ -88,8 +88,9 @@ class CGM():
 def square_wave(start, length, magnitude):
     vals = np.zeros(1440)
     size = magnitude / length
+    ep = 1e-9
     for i in range(length):
-        vals[start+i] = size + 0.1 * np.random.randint(-np.abs(size), np.abs(size))
+        vals[start+i] = size + 0.1 * np.random.uniform(-np.abs(size - ep), np.abs(size + ep))
     return vals
 
 
