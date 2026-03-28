@@ -110,35 +110,35 @@ def spike():
     bs = random.randint(420, 540)
     bscale = random.uniform(ep, 2)
     bs_magnitude = bscale * 40
-    bs_length = random.randint(6, 12)
+    bs_length = random.randint(30, 60)
     spikes += square_wave(bs, bs_length, bs_magnitude)
 
     # We next model lunch with a single spike of average 60
     ls = random.randint(660, 780)
     lscale = random.uniform(ep, 2)
     l_magnitude = lscale * 60
-    l_length = random.randint(6, 24)
+    l_length = random.randint(30, 120)
     spikes += square_wave(ls, l_length, l_magnitude)
 
     # We model dinner with two spikes 60 and 20 seperated by 20 minutes
     ds = random.randint(1080, 1200)
     dscale = random.uniform(ep, 2)
-    d_magnitude = dscale * 80
-    d_length = random.randint(6, 36)
+    d_magnitude = dscale * 200
+    d_length = random.randint(30, 180)
     spikes += square_wave(ds, d_length, d_magnitude)
 
     # We add a snack
     ss = random.randint(360, 1380)
     sscale = random.uniform(ep, 2)
     ss_magnitude = sscale * 20
-    ss_length = random.randint(6, 9)
+    ss_length = random.randint(30, 60)
     spikes += square_wave(ss, ss_length, ss_magnitude)
 
     # Now we add exercise
     es = random.randint(360, 1380)
     escale = random.uniform(ep, 2)
     es_magnitude = -escale* 35
-    es_length = random.randint(1, 12)
+    es_length = random.randint(5, 60)
     spikes += square_wave(es, es_length, es_magnitude)
 
 
