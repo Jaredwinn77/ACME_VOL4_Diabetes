@@ -6,3 +6,8 @@ Time log:
 
 
 3/26/26-- Developed better model of daily glucose levels 1.5 hours (Jared)
+
+3/27/26-- Worked to create regime model 2.5 hours (All)
+3/27/26 -- Fixed regime model 1.5 hours (Jared)
+
+3/28/26 -- Added Kalman filter 1.5 hours (Jared)
