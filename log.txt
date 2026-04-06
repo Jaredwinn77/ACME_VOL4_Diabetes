@@ -11,3 +11,6 @@ Time log:
 3/27/26 -- Fixed regime model 1.5 hours (Jared)
 
 3/28/26 -- Added Kalman filter 1.5 hours (Jared)
+3/31-- Created outline 2.5 hours (Jared)
+4/1-- worked on poster 1 hour (all)
+4/2-- worked on poster 2.75 hours (Jared)
